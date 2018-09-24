@@ -123,3 +123,11 @@
 		}
 	}
 	console.log(oddBonds);
+
+//7. gross of franchise
+
+	let gross = 0;
+	for (let i = 0; i < bondFilms.length; i++){
+		gross += parseInt(bondFilms[i].gross.replace(/,|\$/gi, ''), 10);
+	}
+	console.log(gross);
